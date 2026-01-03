@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>RSVP Bruiloft</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 40px;
+    }
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+    }
+    button {
+      background: #000;
+      color: white;
+      border: none;
+      cursor: pointer;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>RSVP</h1>
+    <p>We kijken ernaar uit om onze bruiloft met jullie te vieren op 29 mei 2026.</p>
+
+    <form action="mailto:VULHIERJEEMAILIN@example.com" method="post" enctype="text/plain">
+      <label>Met hoeveel personen komen jullie?</label>
+      <select name="Aantal personen">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
+
+      <label>Zijn er dieetwensen of allergieën?</label>
+      <textarea name="Dieetwensen" rows="4" placeholder="Bijvoorbeeld vegetarisch, vegan, allergieën..."></textarea>
+
+      <button type="submit">Versturen</button>
+    </form>
+  </div>
+</body>
+</html>
